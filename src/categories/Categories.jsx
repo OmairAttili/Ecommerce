@@ -7,7 +7,8 @@ import GetCategories from '../hook/GetCategories'
 export default function Categories() {
     const {data,isLoading,isError,error}= GetCategories();
     if(isError){
-        return <Typography component='p' sx={{fontSize:20, textAlign:'center', color:'red', marginTop:3}}>Error to get data</Typography>;
+        return <Typography component='p' sx={{fontSize:20, textAlign:'center', color:'red',
+             marginTop:3}}>Error to get data</Typography>;
     }
     if(isLoading){
         return <CircularProgress size={100} sx={{color:'black', marginY:3}}/>;
