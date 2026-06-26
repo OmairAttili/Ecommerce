@@ -3,8 +3,8 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup"
-import { RegSchema } from '../../registerSchema/RegSchema';
 import axiosInstance from '../../api/AxiosInstance';
+import { RegSchema } from '../../registerSchema/RegSchema';
 
 export default function Register() {
 

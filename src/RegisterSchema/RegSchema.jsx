@@ -4,5 +4,5 @@
     fullName:yup.string().required().min(5),
     email:yup.string().required().email(),
     phoneNumber:yup.string().required(),
-    password:yup.string().required(),
+    password:yup.string().required()
   })
