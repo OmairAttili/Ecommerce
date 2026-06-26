@@ -6,6 +6,7 @@ import GetCategories from '../hook/GetCategories'
 
 export default function Categories() {
     const {data,isLoading,isError,error}= GetCategories();
+    console.log(data.response.data);
 
     if(isError){
         return <Typography component='p' sx={{fontSize:20, textAlign:'center', color:'red', marginTop:3}}>Error to get data</Typography>;
